@@ -44,11 +44,11 @@ dockers:
 
     # Templates of the Docker image names.
     image_templates:
-      - "docker.pkg.github.com/vladshub/access_updator:latest"
-      - "docker.pkg.github.com/vladshub/access_updator:{{ .Tag }}"
-      - "docker.pkg.github.com/vladshub/access_updator:v{{ .Major }}.{{ .Minor }}"
-      - "docker.pkg.github.com/vladshub/access_updator:v{{ .Major }}"
-      - "docker.pkg.github.com/vladshub/access_updator:latest"
+      - "docker.pkg.github.com/vladshub/access_updator/access_updator:latest"
+      - "docker.pkg.github.com/vladshub/access_updator/access_updator:{{ .Tag }}"
+      - "docker.pkg.github.com/vladshub/access_updator/access_updator:v{{ .Major }}.{{ .Minor }}"
+      - "docker.pkg.github.com/vladshub/access_updator/access_updator:v{{ .Major }}"
+      - "docker.pkg.github.com/vladshub/access_updator/access_updator:latest"
 
     # Skips the docker push. Could be useful if you also do draft releases.
     # If set to auto, the release will not be pushed to the docker repository
